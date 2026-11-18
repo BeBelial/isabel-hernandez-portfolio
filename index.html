@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isabel Hernández Sagredo — Media Kit</title>
+<meta name="description" content="Media kit de Isabel Hernández Sagredo (@m.isabellaaa): creadora alt, bailarina y cosplayer con pelo azul. Colaboraciones con marcas de belleza, cabello y perfumería.">
+<meta property="og:title" content="Isabel Hernández Sagredo — Media Kit">
+<meta property="og:description" content="Paint the town blue. Creadora alt · danza · cosplay · color fantasía.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#03061a; --navy:#071048; --deep:#0b1a7a; --electric:#1f3cff; --cyan:#00e5ff;
+  --ice:#cfe8ff; --violet:#7b5cff; --white:#f4f7ff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--white);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.5;overflow-x:hidden}
+a{color:inherit}
+.mono{font-family:'Space Mono',monospace;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* grain + glow */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.07;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;justify-content:space-between;align-items:center;padding:16px 24px;
+  background:linear-gradient(var(--ink),transparent)}
+nav .tag{font-family:'Anton';font-size:1.3rem;letter-spacing:.02em}
+nav .tag span{color:var(--cyan)}
+nav ul{display:flex;gap:22px;list-style:none}
+nav a{text-decoration:none}
+nav a:hover{color:var(--cyan)}
+@media(max-width:720px){nav ul{display:none}}
+
+/* HERO */
+.hero{min-height:100vh;position:relative;display:flex;align-items:flex-end;padding:120px 0 64px;
+  background:
+   radial-gradient(60% 50% at 80% 20%, rgba(0,229,255,.35), transparent 60%),
+   radial-gradient(50% 60% at 10% 90%, rgba(123,92,255,.35), transparent 60%),
+   linear-gradient(160deg,var(--navy),var(--ink) 70%)}
+.hero .stripe{position:absolute;inset:auto -10% 38% -10%;height:120px;background:var(--electric);transform:rotate(-6deg);
+  display:flex;align-items:center;overflow:hidden;box-shadow:0 0 80px rgba(31,60,255,.7)}
+.marquee{display:flex;white-space:nowrap;animation:slide 26s linear infinite;font-family:'Anton';font-size:64px;color:var(--ink)}
+.marquee span{padding:0 28px}
+.marquee span:nth-child(even){-webkit-text-stroke:2px var(--ink);color:transparent}
+@keyframes slide{to{transform:translateX(-50%)}}
+.hero h1{font-family:'Anton';font-weight:400;line-height:.86;font-size:clamp(64px,13vw,190px);text-transform:uppercase;position:relative;z-index:2;
+  text-shadow:0 0 40px rgba(0,229,255,.35)}
+.hero h1 .o{-webkit-text-stroke:2px var(--cyan);color:transparent}
+.hero .sub{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:22px;position:relative;z-index:2}
+.pill{border:1.5px solid var(--cyan);color:var(--cyan);border-radius:999px;padding:6px 14px}
+.hero .quote{font-size:clamp(18px,2.2vw,26px);margin-top:26px;max-width:640px;position:relative;z-index:2}
+.hero .quote b{color:var(--cyan)}
+.avatar{position:absolute;right:6%;top:16%;width:min(30vw,330px);aspect-ratio:1;border-radius:50%;z-index:1;
+  background:conic-gradient(from 200deg,var(--cyan),var(--electric),var(--violet),var(--cyan));padding:6px;animation:spin 18s linear infinite}
+.avatar div{width:100%;height:100%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#2a4bff,#071048 70%);
+  display:grid;place-items:center;font-family:'Anton';font-size:min(9vw,110px);color:var(--white);animation:spin 18s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:720px){.avatar{opacity:.35;right:-10%}}
+
+/* SECTIONS */
+section{padding:110px 0;position:relative}
+.label{color:var(--cyan);margin-bottom:14px;display:block}
+h2{font-family:'Anton';font-weight:400;text-transform:uppercase;font-size:clamp(44px,7vw,96px);line-height:.9;margin-bottom:30px}
+h2 em{font-style:normal;color:var(--electric);-webkit-text-stroke:0}
+h2 .o{-webkit-text-stroke:2px var(--white);color:transparent}
+.lead{font-size:1.2rem;max-width:760px;color:var(--ice)}
+
+/* STATS */
+#numeros{background:var(--white);color:var(--ink)}
+#numeros .label{color:var(--electric)}
+#numeros h2 .o{-webkit-text-stroke:2px var(--ink)}
+.big{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;margin:40px 0}
+.big .tot{background:var(--electric);color:var(--white);padding:34px;border-radius:4px;position:relative;overflow:hidden}
+.big .tot .n{font-family:'Anton';font-size:clamp(90px,14vw,180px);line-height:.9}
+.big .tot::after{content:"💙";position:absolute;right:20px;bottom:6px;font-size:90px;opacity:.25}
+.big .side{display:grid;gap:24px}
+.box{border:2.5px solid var(--ink);padding:24px;border-radius:4px;background:var(--white)}
+.box .n{font-family:'Anton';font-size:58px;line-height:1}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.net{background:var(--ink);color:var(--white);padding:28px;border-radius:4px;position:relative}
+.net h3{font-family:'Anton';font-weight:400;font-size:34px;text-transform:uppercase;margin:6px 0 18px}
+.net .row{display:flex;justify-content:space-between;border-top:1px solid #23306e;padding:10px 0}
+.net .row b{font-family:'Anton';font-weight:400;font-size:24px;color:var(--cyan)}
+.net a.go{display:inline-block;margin-top:14px;color:var(--cyan)}
+.note{margin-top:22px;opacity:.7}
+@media(max-width:860px){.big,.grid3{grid-template-columns:1fr}}
+
+/* NICHOS */
+.tags{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.tags span{font-family:'Anton';font-size:clamp(26px,3.4vw,44px);text-transform:uppercase;padding:6px 20px;border:2px solid var(--electric);border-radius:999px}
+.tags span:nth-child(3n+1){background:var(--electric)}
+.tags span:nth-child(3n+2){border-color:var(--cyan);color:var(--cyan)}
+.tags span:nth-child(3n){border-color:var(--violet);background:var(--violet)}
+
+/* CONTENIDO */
+#contenido{background:linear-gradient(180deg,var(--ink),var(--navy))}
+.embeds{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px;align-items:start}
+.embeds blockquote{margin:0!important;min-width:0!important;width:100%!important}
+@media(max-width:980px){.embeds{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.embeds{grid-template-columns:1fr}}
+
+/* PROPUESTA */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.card{background:var(--navy);border:1px solid #1d2a7a;padding:28px;border-radius:4px;transition:.25s}
+.card:hover{transform:translateY(-6px) rotate(-.6deg);border-color:var(--cyan);box-shadow:0 18px 50px rgba(0,229,255,.18)}
+.card .k{font-family:'Anton';font-size:46px;color:var(--electric);line-height:1}
+.card h3{font-size:1.25rem;margin:10px 0 8px}
+.card p{color:var(--ice);font-size:.98rem}
+@media(max-width:860px){.cards{grid-template-columns:1fr}}
+
+/* WHY */
+#por-que{background:var(--electric)}
+#por-que h2 em{color:var(--ink)}
+#por-que .label{color:var(--ink)}
+.why{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:30px;border-top:2px solid var(--ink)}
+.why div{padding:26px 26px 26px 0;border-bottom:2px solid var(--ink)}
+.why b{font-family:'Anton';font-weight:400;font-size:28px;text-transform:uppercase;display:block;margin-bottom:6px;color:var(--ink)}
+@media(max-width:760px){.why{grid-template-columns:1fr}}
+
+/* CONTACT */
+#contacto{text-align:center;background:
+  radial-gradient(50% 60% at 50% 0%, rgba(31,60,255,.55), transparent 70%), var(--ink)}
+#contacto h2{font-size:clamp(56px,10vw,150px)}
+.cta{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:30px}
+.btn{display:inline-flex;gap:10px;align-items:center;padding:16px 26px;border-radius:999px;text-decoration:none;font-weight:700;font-size:1.05rem;transition:.2s}
+.btn.p{background:var(--cyan);color:var(--ink)}
+.btn.s{border:2px solid var(--white)}
+.btn:hover{transform:scale(1.04)}
+.socials{margin-top:40px;display:flex;justify-content:center;gap:28px;flex-wrap:wrap}
+footer{padding:30px 0;text-align:center;opacity:.55}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="tag">ISA<span>.</span>BLUE</div>
+  <ul class="mono">
+    <li><a href="#numeros">Números</a></li>
+    <li><a href="#universo">Universo</a></li>
+    <li><a href="#contenido">Contenido</a></li>
+    <li><a href="#colabora">Colabora</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="avatar" aria-hidden="true"><div>IHS</div></div>
+  <div class="stripe" aria-hidden="true"><div class="marquee">
+    <span>PAINT THE TOWN BLUE</span><span>RIOTS ALL AROUND YOU</span><span>PAINT THE TOWN BLUE</span><span>RIOTS ALL AROUND YOU</span>
+    <span>PAINT THE TOWN BLUE</span><span>RIOTS ALL AROUND YOU</span><span>PAINT THE TOWN BLUE</span><span>RIOTS ALL AROUND YOU</span>
+  </div></div>
+  <div class="wrap">
+    <p class="mono" style="color:var(--cyan);margin-bottom:14px;position:relative;z-index:2">Media kit · 2026 · Madrid, España</p>
+    <h1>Isabel<br><span class="o">Hernández</span><br>Sagredo</h1>
+    <div class="sub mono">
+      <span class="pill">@m.isabellaaa</span>
+      <span class="pill">@misabella_blue</span>
+      <span class="pill">Bailarina</span>
+      <span class="pill">Alt · Cosplay · Color fantasía</span>
+    </div>
+    <p class="quote">Creadora con el <b>pelo azul</b> como firma. Danza, cosplay, moda alternativa y humor sin filtro para una comunidad que <b>no se parece a ninguna otra</b>.</p>
+  </div>
+</header>
+
+<section id="numeros">
+  <div class="wrap">
+    <span class="label mono">01 — Los números</span>
+    <h2>Comunidad <span class="o">real</span>,<br>alcance que <em>desborda</em></h2>
+    <div class="big">
+      <div class="tot">
+        <span class="mono">Comunidad total en 3 redes</span>
+        <div class="n">5.793</div>
+        <p>seguidores entre Threads, Instagram y TikTok</p>
+      </div>
+      <div class="side">
+        <div class="box"><span class="mono">Pico de vistas en un reel</span><div class="n">2.828</div><p>2,6 veces su base de seguidores en Instagram</p></div>
+        <div class="box"><span class="mono">Me gusta en TikTok</span><div class="n">11,1K</div><p>acumulados con 619 seguidores</p></div>
+      </div>
+    </div>
+    <div class="grid3">
+      <div class="net">
+        <span class="mono" style="color:var(--cyan)">Threads</span>
+        <h3>@m.isabellaaa</h3>
+        <div class="row"><span>Seguidores</span><b>4.087</b></div>
+        <div class="row"><span>Post fijado</span><b>111 ♥ · 53 resp.</b></div>
+        <div class="row"><span>Tono</span><b>Humor · día a día</b></div>
+        <a class="go mono" href="https://www.threads.com/@m.isabellaaa" target="_blank" rel="noopener">Ver perfil →</a>
+      </div>
+      <div class="net">
+        <span class="mono" style="color:var(--cyan)">Instagram</span>
+        <h3>@m.isabellaaa</h3>
+        <div class="row"><span>Seguidores</span><b>1.087</b></div>
+        <div class="row"><span>Publicaciones</span><b>828</b></div>
+        <div class="row"><span>Vistas medias por reel</span><b>≈1.100</b></div>
+        <a class="go mono" href="https://www.instagram.com/m.isabellaaa/" target="_blank" rel="noopener">Ver perfil →</a>
+      </div>
+      <div class="net">
+        <span class="mono" style="color:var(--cyan)">TikTok</span>
+        <h3>@misabella_blue</h3>
+        <div class="row"><span>Seguidores</span><b>619</b></div>
+        <div class="row"><span>Vídeo top</span><b>2.672 vistas</b></div>
+        <div class="row"><span>Vídeos de más de 1.000 vistas</span><b>+10</b></div>
+        <a class="go mono" href="https://www.tiktok.com/@misabella_blue" target="_blank" rel="noopener">Ver perfil →</a>
+      </div>
+    </div>
+    <p class="note mono">Datos públicos consultados el 18/11/2026. Vistas medias de reels calculadas sobre sus 19 reels más recientes.</p>
+  </div>
+</section>
+
+<section id="universo">
+  <div class="wrap">
+    <span class="label mono">02 — Su universo</span>
+    <h2>Un nicho <em>azul eléctrico</em></h2>
+    <p class="lead">El color de pelo de Isabel es su seña de identidad, y su contenido gira alrededor de lo que hace que una marca de belleza destaque: transformación, actitud y estética propia. Su audiencia la sigue por su personalidad, no por un algoritmo, y por eso confía en lo que recomienda.</p>
+    <div class="tags">
+      <span>Pelo azul</span><span>Danza</span><span>Cosplay</span><span>Alt / Goth</span>
+      <span>OOTD</span><span>Maquillaje creativo</span><span>Gaming · Arcane</span><span>Biker girl</span><span>Humor</span>
+    </div>
+  </div>
+</section>
+
+<section id="contenido">
+  <div class="wrap">
+    <span class="label mono">03 — Contenido</span>
+    <h2>Lo que <span class="o">mejor</span><br>funciona</h2>
+    <p class="lead">Su contenido con más vistas: danza, transformaciones y vídeos a cámara.</p>
+    <div class="embeds">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DJq1NKaoEtI/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFyIcAyIIB0/" data-instgrm-version="14"></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@misabella_blue/video/7094899651555511557" data-video-id="7094899651555511557" style="max-width:605px;min-width:280px"><section><a target="_blank" href="https://www.tiktok.com/@misabella_blue/video/7094899651555511557">Ver en TikTok</a></section></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DNqVtJ2INV7/" data-instgrm-version="14"></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@misabella_blue/video/7092305843235917062" data-video-id="7092305843235917062" style="max-width:605px;min-width:280px"><section><a target="_blank" href="https://www.tiktok.com/@misabella_blue/video/7092305843235917062">Ver en TikTok</a></section></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/CrvezTlovAS/" data-instgrm-version="14"></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="colabora">
+  <div class="wrap">
+    <span class="label mono">04 — Formatos de colaboración</span>
+    <h2>Cómo trabajamos<br><em>con tu marca</em></h2>
+    <div class="cards">
+      <div class="card"><div class="k">01</div><h3>Unboxing y primeras impresiones</h3><p>Reel o TikTok enseñando el envío PR, con mención y etiqueta a la marca en el post y en las stories.</p></div>
+      <div class="card"><div class="k">02</div><h3>Transformación de color</h3><p>El proceso entero de tinte, retoque o cuidado del color fantasía, contado paso a paso. Es su formato más natural.</p></div>
+      <div class="card"><div class="k">03</div><h3>GRWM y maquillaje creativo</h3><p>Looks alternativos y cosplay preparados con el producto, desde la base hasta el resultado final.</p></div>
+      <div class="card"><div class="k">04</div><h3>Reel de danza</h3><p>El producto dentro de una coreografía o un vídeo de estudio, los vídeos con más alcance de su perfil.</p></div>
+      <div class="card"><div class="k">05</div><h3>Reseña honesta</h3><p>Opinión tras varias semanas de uso, compartida en Threads, donde tiene la comunidad más grande y conversadora.</p></div>
+      <div class="card"><div class="k">06</div><h3>Sorteos y códigos</h3><p>Sorteos para su comunidad o un código de afiliado para medir la conversión.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="por-que">
+  <div class="wrap">
+    <span class="label mono">05 — Por qué Isabel</span>
+    <h2>Lo que <em>ganas</em></h2>
+    <div class="why">
+      <div><b>Alcance más allá de su base</b>Sus reels superan una y otra vez su número de seguidores: llegan a gente nueva, no solo a la de siempre.</div>
+      <div><b>Un nicho difícil de alcanzar</b>Público alternativo, gamer y de moda alt, muy interesado en el color, el maquillaje creativo y los productos que se salen de lo habitual.</div>
+      <div><b>Autenticidad</b>Lleva años con el pelo azul y la marca no tiene que inventarse una historia: ya forma parte de la suya.</div>
+      <div><b>Coste eficiente</b>Una microcreadora con comunidad cercana: más conversación por cada euro o producto invertido.</div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <span class="label mono">06 — Hablemos</span>
+    <h2>Paint it <span class="o">blue</span></h2>
+    <p class="lead" style="margin:0 auto">Para colaboraciones, envíos PR y campañas:</p>
+    <div class="cta">
+      <a class="btn p" href="mailto:ihernandezsagredo@hotmail.com?subject=Colaboraci%C3%B3n%20con%20Isabel%20Hern%C3%A1ndez%20Sagredo">✉ ihernandezsagredo@hotmail.com</a>
+      <a class="btn s" href="tel:+34662469865">☎ +34 662 469 865</a>
+    </div>
+    <div class="socials mono">
+      <a href="https://www.instagram.com/m.isabellaaa/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="https://www.threads.com/@m.isabellaaa" target="_blank" rel="noopener">Threads ↗</a>
+      <a href="https://www.tiktok.com/@misabella_blue" target="_blank" rel="noopener">TikTok ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer class="mono">© 2026 Isabel Hernández Sagredo · Media kit</footer>
+
+<script async src="https://www.instagram.com/embed.js"></script>
+<script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+</html>
